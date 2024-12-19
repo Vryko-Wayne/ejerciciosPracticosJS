@@ -11,7 +11,8 @@ function adivinar() {
         document.body.style.backgroundColor = "green";
     } else if (intentos >= maxIntentos) {
         document.getElementById("mensaje").innerHTML = "¡Has perdido! El número era " + numeroSecreto;
-        document.body.style.backgroundColor = "red";
+        //document.body.style.backgroundColor = "red";
+        initAnimation()
     } else if (adivinanza > numeroSecreto) {
         document.getElementById("mensaje").innerHTML = "Demasiado alto. Intenta de nuevo. Intentos restantes: " + (maxIntentos - intentos);
     } else {
@@ -26,3 +27,8 @@ function reiniciar() {
     document.getElementById("mensaje").innerHTML = "";
     document.body.style.backgroundColor = "white";
 }
+
+function initAnimation(){
+    document.getElementById('mensaje').className ='animacion';
+ }
+ 
