@@ -1,22 +1,34 @@
 function sumar() {
+    if (validar() === false) {  
+        return;
+    }
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     document.getElementById("resultado").innerHTML = "Resultado: " + (num1 + num2);
 }
 
 function restar() {
+    if (validar() === false) {
+        return; 
+    }
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     document.getElementById("resultado").innerHTML = "Resultado: " + (num1 - num2);
 }
 
 function multiplicar() {
+    if (validar() === false) {
+        return;     
+    }
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     document.getElementById("resultado").innerHTML = "Resultado: " + (num1 * num2);
 }
 
 function dividir() {
+    if (validar() === false) {
+        return;
+    }   
     var num1 = parseFloat(document.getElementById("num1").value);
     var num2 = parseFloat(document.getElementById("num2").value);
     document.getElementById("resultado").innerHTML = "Resultado: " + (num1 / num2);
