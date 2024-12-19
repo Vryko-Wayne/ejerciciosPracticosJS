@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:nth-child(2) {
+    background-color: #ff4444;
+    color: white;
+}
+
+button:nth-child(3) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:nth-child(4) {
+    background-color: #2196F3;
+    color: white;
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 80%;
+        margin: 5px;
+    }
+}
