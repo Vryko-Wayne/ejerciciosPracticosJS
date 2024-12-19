@@ -8,6 +8,7 @@ function adivinar() {
     
     if (adivinanza === numeroSecreto) {
         document.getElementById("mensaje").innerHTML = "¡Correcto! El número era " + numeroSecreto;
+        document.body.style.backgroundColor = "green";
     } else if (intentos >= maxIntentos) {
         document.getElementById("mensaje").innerHTML = "¡Has perdido! El número era " + numeroSecreto;
         document.body.style.backgroundColor = "red";
